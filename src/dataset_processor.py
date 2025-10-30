@@ -1142,6 +1142,15 @@ class CopilotProcessor (DatasetProcessor):
                 logfile = os.path.join(issue_dir, "prompts", f"{issue}.md")
                 os.makedirs(os.path.dirname(logfile), exist_ok=True)
                 print(f"Requesting valid response to model...")
+                
+                # Print prompt to terminal (saved in run.log)
+                print("=" * 80)
+                print(f"📋 TASK: {id}")
+                print("=" * 80)
+                print("📝 PROMPT:")
+                print("-" * 50)
+                print(prompt)
+                print("-" * 50)
 
                 try:
                     if model != None:
@@ -1156,6 +1165,29 @@ class CopilotProcessor (DatasetProcessor):
                         output, success = self.model.prompt(prompt, schema=schema_to_use, prompt_log=logfile, files=files, timeout=MODEL_TIMEOUT, category=cat)
                     else:
                         raise ValueError("Unable to execute harness without an model assigned.")
+                    
+                    # Print response to terminal (saved in run.log)
+                    if success:
+                        print("💻 GENERATED RESPONSE:")
+                        print("-" * 50)
+                        if isinstance(output, dict):
+                            for file_path, content in output.items():
+                                print(f"📁 {file_path}:")
+                                print("~" * 40)
+                                if isinstance(content, str):
+                                    # Clean up content and limit output
+                                    content_lines = content.split('\n')
+                                    for i, line in enumerate(content_lines[:100]):  # Limit to 100 lines
+                                        print(line)
+                                    if len(content_lines) > 100:
+                                        print(f"... ({len(content_lines) - 100} more lines)")
+                                else:
+                                    print(str(content))
+                                print("~" * 40)
+                        else:
+                            print(str(output))
+                        print("-" * 50)
+                        print("=" * 80)
                     
                     # Handle parsing failures
                     if not success:

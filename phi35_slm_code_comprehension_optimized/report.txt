@@ -1,0 +1,82 @@
+
+=== Benchmark Report ===
+Dataset: example_dataset/cvdp_v1.0.1_example_nonagentic_code_comprehension_with_solutions.jsonl
+Generated: 2025-09-27 11:52:16
+
+=== Run Configuration ===
+Golden Mode: No
+Patches Disabled: No
+Model/Agent: phi35-slm
+=======================
+
+
+=== Overall Test Statistics ===
++----------------+-------+
+| Total Tests    | 1     |
++----------------+-------+
+| Passed Tests   | 0     |
++----------------+-------+
+| Failed Tests   | 1     |
++----------------+-------+
+| Test Pass Rate | 0.00% |
++----------------+-------+
+
+=== Overall Problem Statistics ===
++-------------------+--------+
+| Total Problems    | 1      |
++-------------------+--------+
+| Passed Problems   | 0.4    |
++-------------------+--------+
+| Failed Problems   | 0.6    |
++-------------------+--------+
+| Problem Pass Rate | 40.00% |
++-------------------+--------+
+
+=== Problem Results by Difficulty ===
++--------------+---------+--------+--------+--------+
+| Difficulty   |   Total |   Pass |   Fail | Rate   |
++==============+=========+========+========+========+
+| Easy         |       1 |    0.4 |    0.6 | 40.00% |
++--------------+---------+--------+--------+--------+
+
+=== Test Results by Category ===
++--------+---------+--------+--------+--------+
+| Cat    |   Total |   Pass |   Fail | Rate   |
++========+=========+========+========+========+
+| cid010 |       1 |      0 |      1 | 0.00%  |
++--------+---------+--------+--------+--------+
+
+=== Problem Results by Category ===
++---------+---------+--------+--------+--------+
+| Cat     |   Total |   Pass |   Fail | Rate   |
++=========+=========+========+========+========+
+| cid010* |       1 |    0.4 |    0.6 | 40.00% |
++---------+---------+--------+--------+--------+
+* Categories marked with asterisk use score-based scoring (0-1 range) instead of binary pass/fail
+
+=== Test Results by Category and Difficulty ===
++--------+--------+----------+--------+---------+-----------+---------+
+| Cat    | Easy   | Medium   | Hard   | Easy%   | Medium%   | Hard%   |
++========+========+==========+========+=========+===========+=========+
+| cid010 | 0/1    | -        | -      | 0.0%    | -         | -       |
++--------+--------+----------+--------+---------+-----------+---------+
+
+=== Problem Results by Category and Difficulty ===
++---------+--------+----------+--------+---------+-----------+---------+
+| Cat     | Easy   | Medium   | Hard   | Easy%   | Medium%   | Hard%   |
++=========+========+==========+========+=========+===========+=========+
+| cid010* | 0.4/1  | -        | -      | 40.00%  | -         | -       |
++---------+--------+----------+--------+---------+-----------+---------+
+* Categories marked with asterisk use score-based scoring (0-1 range) instead of binary pass/fail
+
+=== Failing Problems ===
++-----+--------------------------------------------+---------------+----------------+---------------------+
+| #   | Problem ID                                 | Category      | Failed Tests   | Log/Error           |
++=====+============================================+===============+================+=====================+
+| 1   | cvdp_copilot_barrel_shifter_0031           | cid010 (easy) | 1              |                     |
++-----+--------------------------------------------+---------------+----------------+---------------------+
+|     | ↳ Test 1: cvdp_copilot_barrel_shifter_0031 |               |                | Log: _llm_score.txt |
++-----+--------------------------------------------+---------------+----------------+---------------------+
+
+=== Passing Problems ===
+No passing problems found.

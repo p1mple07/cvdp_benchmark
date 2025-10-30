@@ -71,8 +71,11 @@ When generating files, return the file name in the correct place at the folder s
         }
         if category is not None and category in self.category_guidance:
             system_prompt += f"\n{self.category_guidance[category]}\n"
-        else:
-            assert False, f"Category {category} is not a valid category"
+        elif category is not None:
+            # Invalid category provided - log warning but don't crash
+            import logging
+            logging.warning(f"Invalid category {category} provided, using default context")
+        # If category is None, just use the base context without category-specific guidance
 
         # Add guidance about timescale for code generation categories
         # [TODO] Should enable this on a further release since it's a fundamental assumption for many problems
