@@ -1,0 +1,84 @@
+================================================================================
+PARTIAL BENCHMARK RESULTS ANALYSIS
+================================================================================
+
+Directory: deepseek-full-agentic-4
+Total tests completed: 69
+Tests passed: 0
+Tests failed: 69
+Pass rate: 0.00%
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+Problem                                            Run        Status    
+--------------------------------------------------------------------------------
+64b66b_codec                                       1          ❌ FAIL    
+AES_encryption_decryption                          12         ❌ FAIL    
+AES_encryption_decryption                          18         ❌ FAIL    
+AES_encryption_decryption                          3          ❌ FAIL    
+AES_encryption_decryption                          5          ❌ FAIL    
+AES_encryption_decryption                          9          ❌ FAIL    
+DES                                                1          ❌ FAIL    
+DES                                                3          ❌ FAIL    
+DES                                                5          ❌ FAIL    
+DES                                                7          ❌ FAIL    
+Min_Hamming_Distance_Finder                        1          ❌ FAIL    
+PCIe_endpoint                                      1          ❌ FAIL    
+arithmetic_progression_generator                   1          ❌ FAIL    
+async_fifo_compute_ram_application                 1          ❌ FAIL    
+async_fifo_compute_ram_application                 6          ❌ FAIL    
+async_filo                                         1          ❌ FAIL    
+axi4lite_to_pcie_config                            3          ❌ FAIL    
+axis_broadcaster                                   1          ❌ FAIL    
+axis_to_uart                                       1          ❌ FAIL    
+axis_to_uart                                       4          ❌ FAIL    
+barrel_shifter                                     1          ❌ FAIL    
+barrel_shifter                                     2          ❌ FAIL    
+bcd_adder                                          4          ❌ FAIL    
+binary_search_tree_algorithms                      1          ❌ FAIL    
+binary_search_tree_algorithms                      14         ❌ FAIL    
+binary_to_gray                                     3          ❌ FAIL    
+byte_enable_ram                                    2          ❌ FAIL    
+cache_controller                                   1          ❌ FAIL    
+caesar_cipher                                      1          ❌ FAIL    
+cellular_automata                                  2          ❌ FAIL    
+cic_decimator                                      1          ❌ FAIL    
+cipher                                             1          ❌ FAIL    
+cont_adder                                         1          ❌ FAIL    
+csr_using_apb_interface                            1          ❌ FAIL    
+custom_fifo                                        4          ❌ FAIL    
+digital_stopwatch                                  1          ❌ FAIL    
+direct_map_cache                                   1          ❌ FAIL    
+direct_map_cache                                   3          ❌ FAIL    
+dma_xfer_engine                                    1          ❌ FAIL    
+door_lock                                          1          ❌ FAIL    
+dual_port_memory                                   1          ❌ FAIL    
+dual_port_memory                                   4          ❌ FAIL    
+dynamic_equalizer                                  1          ❌ FAIL    
+dynamic_equalizer                                  4          ❌ FAIL    
+dynamic_equalizer                                  8          ❌ FAIL    
+elevator_control                                   4          ❌ FAIL    
+ethernet_mii                                       4          ❌ FAIL    
+ethernet_mii                                       6          ❌ FAIL    
+event_scheduler                                    1          ❌ FAIL    
+event_scheduler                                    4          ❌ FAIL    
+event_storing                                      1          ❌ FAIL    
+fixed_arbiter                                      10         ❌ FAIL    
+gcd                                                7          ❌ FAIL    
+hdbn_codec                                         1          ❌ FAIL    
+jpeg_runlength_enc                                 1          ❌ FAIL    
+lfsr                                               1          ❌ FAIL    
+lfsr                                               5          ❌ FAIL    
+low_power_channel                                  1          ❌ FAIL    
+monte_carlo                                        6          ❌ FAIL    
+multiplexer                                        1          ❌ FAIL    
+nbit_swizzling                                     1          ❌ FAIL    
+nmea_gps                                           8          ❌ FAIL    
+phase_rotation                                     10         ❌ FAIL    
+phase_rotation                                     13         ❌ FAIL    
+phase_rotation                                     15         ❌ FAIL    
+phase_rotation                                     19         ❌ FAIL    
+phase_rotation                                     28         ❌ FAIL    
+phase_rotation                                     31         ❌ FAIL    
+phase_rotation                                     38         ❌ FAIL    
